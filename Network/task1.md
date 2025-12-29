@@ -5,13 +5,13 @@
 Ответ: ip link show - показывает все интерфейсы, их состояние и т.д.
 ifconfig -a - показывает интерфейсы, IP-адреса и статус
 netstat -i — показывает статистику сетевых интерфейсов (трафик, ошибки, сбросы).
-Снимок в файле <span style="color:blue;">task 10.1.1.png</span>
+Снимок в файле <span style="color:blue;">task 10.1.1.png, task 10.1.1(2)</span>
 2. Попробуйте изменить ip адрес
-Ответ: Снимок в файле <span style="color:blue;">task 10.1.2.png</span>
+Ответ: Команда - ip addr add. Снимок в файле <span style="color:blue;">task 10.1.2.png</span>
 3. Попробуте добавить несколько ip адресов на сетевую карту
 Ответ: Действуем по аналогии с пунктом 2
 4. Выведите список маршрутов
-Ответ: Снимок в файле <span style="color:blue;">task 10.1.4.png</span>
+Ответ: Вывожу с помощью команды ip route show. Снимок в файле <span style="color:blue;">task 10.1.4.png</span>
 5. Выведите arp таблицу
 Ответ: Снимок в файле <span style="color:blue;">task 10.1.5.png</span>
 
