@@ -5,11 +5,11 @@
 2. Как их создать?
 Ответ: Ключи создаются специальной утилитой ssh-keygen. Она генерирует два файла: один приватный у пользователя, а второй публичный отправляется на сервер
 3. Создайт пару публичный/приватный ключ ed_25519, где они хранятся?
-Ответ: Создал ключи, они лежат в папке ~/.ssh/ <span style="color:blue;">task 7.3.3.png</span>
+Ответ: Создал ключи, они лежат в папке ~/.ssh/ ![alt text](task7.3.3.png)
 4. Скопируйте публичный ключ на ваш сервер, в каком файле он будет храниться?
 Ответ: Он будет хранится в файле в файле /home/scriptuser/.ssh/autorized_keys
-<span style="color:blue;">task 7.3.4.png</span>
+![alt text](task7.3.4.png)
 5. Попробуйте подключиться к серверу, у вас запросили пароль?
-Ответ: Вход теперь доступен без пароля <span style="color:blue;">task 7.3.5.png</span>
+Ответ: Вход теперь доступен без пароля ![alt text](task7.3.5.png)
 6. Запретите подключение с паролем для всех пользователей, оставьте только с помощью ключа.
-Ответ: При помощи команды sudo sed -i -e 's/^#*PasswordAuthentication.*/PasswordAuthentication no/' -e 's/^#*PubkeyAuthentication.*/PubkeyAuthentication yes/' /etc/openssh/sshd_config. Процесс показан в файле:<span style="color:blue;">task 7.3.6.png</span>
+Ответ: При помощи команды sudo sed -i -e 's/^#*PasswordAuthentication.*/PasswordAuthentication no/' -e 's/^#*PubkeyAuthentication.*/PubkeyAuthentication yes/' /etc/openssh/sshd_config. Процесс показан в файле:![alt text](task7.3.6.png)
